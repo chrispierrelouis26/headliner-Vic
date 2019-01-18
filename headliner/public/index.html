@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One|Economica" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <title>Scraping With Mongoose</title>
+  <style>
+    body {}
+
+    #wrapper {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 60%;
+      height: 700px;
+    }
+
+    #notes {
+      float: right;
+      width: 30%;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      background-color: #FCF5C7;
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+
+    .jumbotron {
+      font-family: 'Economica', sans-serif;
+      font-family: 'Chau Philomene One', sans-serif;
+      background-color: white;
+    }
+
+    h1 {
+      font-size: 75px;
+    }
+
+    .navbar {
+      font-family: 'Economica', sans-serif;
+      font-family: 'Chau Philomene One', sans-serif;
+      background-color: white;
+      float: right;
+
+    }
+    .section-header{
+      border-top: 3px solid #000000;
+    }
+    .header-one{
+      font-family: 'Economica', sans-serif;
+      font-family: 'Chau Philomene One', sans-serif;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <div class="jumbotron text-center">
+      <nav class="navbar"><a href="https://www.vice.com">More Vice</a></nav>
+    <h1>Daily News</h1>
+  </div>
+  <div class="wrapper">
+  <div class="section-header">
+    <h3 class="header-one"> Latest
+
+    </h3>
+
+  </div>
+</div>
+  <div id="articles"></div>
+  <div id="notes"></div>
+  <script>
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
