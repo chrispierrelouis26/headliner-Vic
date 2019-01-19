@@ -5,9 +5,10 @@ var axios = require("axios");
 var cheerio = require("cheerio");
 var db = require("./models");
 
-var PORT = 3000 || process.env.MONGODB_URI;
+var PORT = 3000 || process.env.PORT;
+//lol 
 
-      
+      //
 var databaseURI = "mongodb://localhost/vice";
 
 if (process.env.MONGODB_URI) {
