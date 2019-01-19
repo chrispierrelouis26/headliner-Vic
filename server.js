@@ -43,7 +43,7 @@ app.get("/scrape", function (req, res) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
     // Now, we grab every h2 within an article tag, and do the following:
-    $(".grid__wrapper__card__text").each(function (i, element) {
+    $("a.grid__wrapper__card").each(function (i, element) {
       // Save an empty result object
       var result = {};
 
@@ -54,8 +54,10 @@ app.get("/scrape", function (req, res) {
       // problems to solve w/ tutor
       // FIGURE OUT HOW TO SCRAPE PHOTO BELOW
       //GRID-TEMPLATE MAYBE?
-      // result.img = $(this).find("grid__wrapper__card__thumbnail__wrapper").find("grid__wrapper__card__thumbnail").find("picture").find("img").text();
-      // console.log(img.result);
+      // i tried everythin when it cam to the img
+      // it should be an easy scrape but i was getting "" as my return for img let me see
+      result.img = $(element).find("picture").find("img").attr("src");
+      console.log(result.img); 
 
 
       // Create a new Article using the `result` object built from scraping
